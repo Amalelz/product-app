@@ -1,18 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import SearchProduct from './components/SearchProduct';
-import AddProduct from './components/AddProduct';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import View from './components/View';
+import Frontpage from './components/Frontpage';
+import Add from './components/Add';
+import Search from './components/Search';
 import Delete from './components/Delete';
-import ProductView from './components/ProductView';
 
 function App() {
   return (
-    <div>
-      <AddProduct/>
-      < SearchProduct/>
-      <Delete/>
-      <ProductView/>
-    </div>
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Frontpage/>} />
+    <Route path='/view' element={<View/>} />
+    <Route path='/add' element={<Add/>} />
+    <Route path='/search' element={<Search/>} />
+    <Route path='/delete' element={<Delete/>} />
+   </Routes>
+   </BrowserRouter>
   );
 }
 

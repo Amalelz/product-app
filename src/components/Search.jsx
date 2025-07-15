@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-const Delete = () => {
+const Search = () => {
   return (
     <div>
         <Navbar/>
@@ -20,7 +20,7 @@ const Delete = () => {
                       
                       
                         <div className="column col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <button className="btn btn-outline-success">Delete Phone</button>
+                            <button className="btn btn-outline-success">Search Phone</button>
                         </div>
                     </div>
                 </div>
@@ -30,4 +30,4 @@ const Delete = () => {
   )
 }
 
-export default Delete
+export default Search
